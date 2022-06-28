@@ -1,3 +1,67 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+ /*Body background-color:*/
+ body {
+  background: #36D1DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5B86E5, #36D1DC); 
+}
+
+h2 {
+  color: #000;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 30px;
+  box-shadow:0 .5rem 1rem;
+  background-color: #fff; 
+}
+
+.spacetable{
+  height: 60px;
+}
+
+.form-check-input{
+  height: 1.8em;
+  width: 1.8em;
+}
+
+.list-group-item-action:hover {
+  background-color: #36D1DC;
+}
+
+/*smaller screens*/
+@media (max-width: 991px)
+{
+  .table-responsive {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .d-flex{
+    display: block!important;
+  }
+  ul {
+    margin-left: -3.7rem!important;
+  }
+
+  #addTask {
+    margin-left: 0.5rem!important;
+  }
+}
+
+@media (max-width: 575px) {
+  ul {
+    margin-left: -4rem!important;
+  }
+}
+
+.form-style{
+  margin-top: 10px;
+}
+
+.btn-add {
+ margin-bottom: 10px;
+}
